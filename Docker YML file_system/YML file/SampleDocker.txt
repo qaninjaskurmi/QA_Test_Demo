@@ -1,0 +1,20 @@
+version: '3'
+services:
+  fpm:
+    image: sample/qa-fpm:latest
+    container_name: Samle_qa_DockerWork
+    ports:
+      - "9999:80"
+  db:
+    image: sample/qa-db:latest
+    container_name: sample_qa_db
+    ports: 
+      - "3316:3306"
+
+  phpmyadmin:
+    container_name: pa_phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8181:80"
+    links:
+      - db:db

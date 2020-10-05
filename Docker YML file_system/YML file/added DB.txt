@@ -1,0 +1,7 @@
+
+I've updated docker-compose.yml file to achive the following: 
+
+1) Added a PHPMyAdmin docker container and linked it to the existing MySQL container so that I can test and check the data from the mysql tables easily. 
+
+2) Exposed 3316 port of the MySQL container sot that we can connect to MySQL from localhost using MySQL WorkBench or SQLYog like desktop based softwares
+

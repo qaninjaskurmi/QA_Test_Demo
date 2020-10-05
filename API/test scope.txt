@@ -1,0 +1,7 @@
+As API test scope was not included here, i did very limited test here which is only related with Functional Test. 
+
+But here a lot of API test scope has,
+1. Details manual test possible by chcking all cases with all data, response, endpoints, parameter, exception and error handling data etc.
+2. It can be possible API automation with Postman, Python, Locust or Jmeter
+3. API Load Test Can be possible with Locust, Jmeter
+and many more check can be possible by depending on requirement and expectation and test cases
