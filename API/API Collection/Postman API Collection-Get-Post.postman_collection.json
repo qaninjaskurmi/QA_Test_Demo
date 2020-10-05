@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "c39a1e0f-1928-45b8-aa2e-16670842f779",
+		"name": "Postman API Collection-Get-Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add statement",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"statement\": {\r\n                \"account_id\": \"1\", \r\n                \"amount\": \"100\", \r\n                \"currency\": \"EUR\", \r\n                \"date\":1598016617\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9999/statements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"statements"
+					]
+				},
+				"description": "Add operation data statement"
+			},
+			"response": []
+		},
+		{
+			"name": "statements",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/statements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"statements"
+					]
+				},
+				"description": "check statements report "
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,9 @@
+cd E:
+cd .\Docker\
+E:\Docker> dir (it will show full directory)
+
+E:\Dcker> cd paysera
+E:\Docker\paysera> dir
+
+PS E:\Docker\paysera docker-compose restart (if done it will be restarted)
+

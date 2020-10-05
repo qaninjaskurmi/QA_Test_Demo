@@ -1,0 +1,10 @@
+API collection will be imported at POSTMAN for API endpoint call and see
+
+Steps:
+-------
+
+1. Download POSTMAN and install
+2. Open Postman and Impot the Collection
+3. Call Post call of statement to insert data
+4. Call GET call of statement to see
+5. see the Data insertion status from DB and Frontend both
