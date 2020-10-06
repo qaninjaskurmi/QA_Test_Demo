@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# assuming a csv file with a name in column 0 and the image url in column 1
+# assuming a csv file with a account numbers in column 0 and The Amount in column 1
+# Currency in Column 3 and Date plus time in Column 4
 
 import requests
 import csv
@@ -17,11 +18,8 @@ with open("statementdata.csv", 'r') as csvfile:
         data = line.strip().split(',')
         print(data)
 
-        # API call
-        # -url:API-HOSTing-endpoint
-        # -payload- dict
-        # -jsonData- parameter passing in img 2 file
-        # -r is calling the post
+        # API calling and data inserting from CSV
+        # taking date and hour in format by following the column no of CSV file, table in DB, Time stamp also
 
         dtString = data[3]
         element = datetime.datetime.strptime(dtString, "%Y-%m-%d %H:%M:%S")
@@ -29,7 +27,7 @@ with open("statementdata.csv", 'r') as csvfile:
         print(timestampData)
 
         url = "http://localhost:9999/statements"
-        # payload = dict(key='3e167938b317a5e559ced7697718eb74')
+        # url is the hosting address at local
 
         dataDict = { "statement": {"account_id": data[0], "amount": data[1], "currency": data[2], "date": timestampData} }
         jsonObj  = json.dumps(dataDict)
@@ -48,7 +46,7 @@ with open("statementdata.csv", 'r') as csvfile:
         allRows.append(data)
         # exit();
 
-# write the csv
+# write the new csv with result of API response time and status code and also storing the timestamp data
 with open('statements_result.csv', "a+", newline='') as fw:
     writer = csv.writer(fw)
     writer.writerows(allRows)
