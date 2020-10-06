@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+GET,/statements/statements?account_id=2,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=2,20
+GET,/statements/statements?account_id=3,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=3,11
+GET,/statements/statements?account_id=0,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=0,74
+GET,/statements/statements?account_id=5,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=5,3
+GET,/statements/statements?account_id=6,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=6,1
+GET,/statements/statements?account_id=1,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=1,39
+GET,/statements/statements?account_id=4,404 Client Error: Not Found for url: http://localhost:9999/statements/statements?account_id=4,5

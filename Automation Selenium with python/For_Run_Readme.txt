@@ -18,8 +18,9 @@ Copy path to advanced system
 
 
 Step 3. Install selenium Webdriver
-Upgrade pip
-Upgrade pip : https://datatofish.com/upgrade-pip/ 
+-Upgrade pip (if PIP is not upgraded with Python)
+
+Upgrade pip : Deatils Follow https://datatofish.com/upgrade-pip/ 
 python -m pip install --upgrade pip
 pip –version
 
