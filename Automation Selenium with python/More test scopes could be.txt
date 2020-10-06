@@ -1,0 +1,16 @@
+Here it can be possible to do more automation by doing more scripting and checking:
+
+1. Before Balance element
+2. It's amount calculatin status by writting script and using elements from selenium
+3. Aftrer Balance Element
+4. It's Amount calculation status
+5. Search result sowing correctly or not chekcing
+6. Transection Update check
+7. Previous date input update check 
+3. Database connection with Python and checking Turnover amount
+
+But for limited time and scopes, I could not do that currently. 
+Also, if some elements tracking would be easier i front-end interface CSS would use specific id/Selector.
+It is better for usual UI automation and less costly and healthy.
+
+- Selenium Webdriver using Python can be run by using Docker also, For limited i could not provide it.
